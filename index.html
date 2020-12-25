@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>It's Ata</title>
+    <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Exo">
+    <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=BenchNine">
+    <link rel = "stylesheet" type  = "text/css" href = "fontawesome/css/all.css">
+    <link rel = "stylesheet" type  = "text/css" href = "css/style1.css">
+    <link rel = "stylesheet" type  = "text/css" href = "css/style2.css">
+    <link rel = "stylesheet" type  = "text/css" href = "css/style3.css">
+</head>
+<body>
+    <div id = "front-page">
+        <div class = "back-opaque"></div>
+        <section class = "front-section">
+            <div class = "front-text">
+                <header>
+                <h1>Hey there! It's Ata.</h1>
+                </header>
+                <p>I am Ata ur Rahman, but you can call me just Ata.</p>
+                <button class = "about-btn">About me</button>
+            </div>
+        </section>
+        </div>
+
+
+        <main id = "main-page">
+            
+            <div class = "up-btn">
+                <button>
+                    <strong class = "fas fa-arrow-up"></strong>
+                </button>
+            </div> 
+            <section class = "about-section">
+                <header>
+                    <h2 class = "headings">Ata ur Rahman</h2>
+                </header >
+                    <article class = "my-article">
+                        <p>
+                        Hey! I am Ata ur Rahman Shahid, a Computer Science student from Karachi, Pakistan. With an interest in Computer Programming, I am passionate about Web Development. 
+                        </p>
+                
+                        <p>
+                        Unlike most kids around me, I had (and still have) more interest in activities which others found boring like reading books, 
+                        exploring in-depth mechanism of how things work—like electronics, and collecting different components of broken machines and experimenting with gadgets. 
+                        Both my curiosity and interest in evolving technology over the years has led me to Computer Science, and here I am today!
+                        </p>
+                
+                        <p>
+                        Apart from computer-based activities, I like to read biographies and books on history in spare time.
+                        </p>
+
+                    </article>
+
+                    <div class = "article-end"></div>
+
+            </section>
+
+            <section class = "skills-section">
+                <header>
+                    <h3 class = "headings sub-headings">What I do</h3>
+                </header>
+                
+                <article class = "my-article">
+                    <p>
+                        As a student of Computer Science, I have mastered the concepts that are crucial for efficient programming like Object Orientation, 
+                        Data Structures, and most importantly, Problem Solving.
+                    </p>
+                    <p>
+                        Although I have a grasp on the basics of Front-End Web Development, HTML, CSS and JavaScript (ES6), 
+                        I am interested mainly in Back-End Web Development. 
+                        My vast knowledge in PHP has also driven me into exploring its widely-known framework, Laravel.
+                    </p>
+                    <p>
+                        Besides, I am a dab hand at popular databases like MySQL, PostgreSQL and MongoDB and their modelling and 
+                        integration with PHP and Laravel.
+                    </p>
+                    
+                </article>
+
+                <div class = "skills-container">
+                    <ul id = "skills-list">
+                        <li><strong class = "fab fa-html5"></strong></li>
+                        <li><strong class = "fab fa-css3-alt"></strong></li>
+                        <li><strong class = "fab fa-js"></strong></li>
+                        <li><strong class = "fab fa-php"></strong></li>
+                        <li><strong class = "fab fa-laravel"></strong></li>
+                    </ul>
+                </div>
+
+                <div class = "skills-end"></div>
+            </section>
+
+            <footer class = "contact-section">
+                <div class = "contact-text">
+                    <h3 class = "headings sub-headings">Reach out to me</h3>
+                    <p>I can be reached at my social accounts on Facebook, Instagram, Linkedin or Github</p>
+                </div>
+                <nav>
+                    <ul id = "nav-list">
+                        <li><a href = "https://www.facebook.com/ata.u.rahman.79">
+                        <strong class = "fab fa-facebook-f"></strong></a></li>
+
+                        <li><a href = "https://www.instagram.com/ataurahman15/">
+                        <strong class = "fab fa-instagram"></strong></a></li>
+
+                        <li><a href = "https://www.linkedin.com/in/ata-ur-rehman-shahid-3855b81a1/">
+                        <strong class = "fab fa-linkedin-in"></strong></a></li>
+
+                        <li><a href = "https://github.com/ataurehman-ars">
+                        <strong class = "fab fa-github"></strong></a></li>
+                    </ul>
+                </nav>
+
+                <div class = "mail">
+                    <p>Or you can directly send me an email at <a href="mailto:urs15ata@gmail.com">urs15ata@gmail.com</a></p>    
+                </div>            
+            </footer>
+        </main>
+
+    <template>
+        <style id = "h2_one_after">
+            .about-section h2::after {
+                animation: underline-h1 1.5s  forwards; 
+            }
+
+        </style>
+    </template>   
+    
+    <template>
+        <style id = "underline-section">
+            .about-section::after{
+                animation : underline-section 1.5s .5s forwards;
+            }
+        </style>
+    </template>
+
+    <template>
+        <style id = "do-after">
+            .skills-section h3::after {
+                animation : rotate-do-after 1s .2s forwards ease-in-out;
+            }
+        </style>
+    </template>
+
+    <template>
+        <style id = "skills-section-end">
+            .skills-section::after {
+                animation : underline-h1 1.5s forwards;
+            }
+        </style>
+    </template>
+
+    <template>
+        <style id = "do-after-footer">
+            .contact-section h3::after{
+                animation : rotate-do-after 1s 1.5s forwards ease-in-out;
+            }
+        </style>
+    </template>
+
+    <script type = "module" src= "js/ui.js"></script>
+
+</body>
+
+
+</html>
+
+
+
