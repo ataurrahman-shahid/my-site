@@ -1,0 +1,144 @@
+
+:root {
+    --article-size : calc(16px + 1vw);
+}
+#main-page {
+    padding: 10vh 0;
+    box-sizing: border-box;
+    font-family: var(--fontBenchNine);
+    color : var(--foreColor);
+}
+
+.about-section , .skills-section {
+    display: grid;
+    width: 60%;
+}
+
+.my-article {
+    display: grid;
+    grid-gap: 4vh;
+    margin-bottom: 1.5em;
+}
+
+
+.my-article > p{
+    transform: scaleY(0);
+    opacity: 0;
+}
+
+.article-end {
+    margin: 1.5em 0;
+}
+
+.headings {
+    margin-bottom: 6vh;
+    font-size: calc(24px + 3vw);
+    text-align: center;
+    transform: translateY(30px);
+    opacity : 0;
+}
+
+.sub-headings {
+    font-size: calc(1.3em + 2vw);
+    text-align: left;
+}
+.about-section p, 
+.skills-section p, 
+.contact-section p, 
+.mail a {
+
+    font-size: var(--article-size);
+}
+
+
+.skills-section h3::after, .contact-section h3::after {
+    display: inline-block;
+    margin-left: 10px;
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+    content: "\f121";
+    color: var(--btnColor);
+    transform: rotateZ(180deg);
+    opacity : 0;
+}
+.about-section h2::after , 
+.about-section::after , 
+.skills-section::after 
+{
+    content: "";
+    display: block;
+    height: 3px;
+    width: 100%;
+    margin : .5em auto;
+    background: var(--btnColor);
+    position: relative;
+    border-radius: 10px;
+}
+
+.about-section h2::after {
+    left : 10000px;
+}
+.about-section::after {
+    left: -10000px;
+}
+.skills-section::after {
+    left : 10000px;
+}
+
+@keyframes scale-h2 {
+    95% {
+        opacity : 100%;
+    }
+    to {
+        transform: translateY(0);
+        opacity : 100%;
+    }
+}
+
+@keyframes underline-h1 {
+    from {
+        left : 10000px;
+    }
+   
+    to {
+        left: 0;
+    }
+}
+
+@keyframes underline-section {
+    from {
+        left: -10000px;
+    }
+    to {
+        left: 0;
+    }
+}
+
+@keyframes rotate-do-after {
+    0% {
+        transform: rotateZ(180deg);
+        opacity : 0;
+    }
+    95% {
+        opacity : 95%;
+    }
+    100% {
+        opacity : 100%;
+        transform: rotateZ(0);
+    }
+}
+
+@media (max-width : 500px) {
+
+    .about-section, .skills-section {
+        margin: 0;
+        width: 95%;
+    }
+    .about-section h2::after , 
+    .about-section::after , 
+    .skills-section::after {
+        width: 90%;
+ }
+}
+
+

@@ -1,0 +1,124 @@
+
+
+#skills-list, #nav-list {
+    margin: 0;
+    padding: 0;
+    display : flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    column-gap: 2em;
+    margin: 2em auto;
+}
+
+#nav-list {
+    column-gap: 3em;
+}
+#nav-list a {
+    color: var(--foreColor);
+}
+#nav-list li{
+    list-style: none;
+    font-size: calc(2vw + 25px);
+    cursor: pointer;
+    transition : .5s ease-in-out;
+}
+
+#nav-list li a {
+    color: var(--listColor);
+}
+
+#nav-list li a:hover {
+    color: var(--foreColor);
+}
+
+#skills-list li {
+    list-style: none;
+    font-size: calc(5vw + 25px);
+    transform: translateY(40px);
+    opacity : 0;
+    color: gray;
+}
+
+
+
+#skills-list li:focus{
+    color : var(--btnColor);
+}
+
+.contact-section {
+    display: grid;
+    justify-content: center;
+}
+
+.contact-section h3::after {
+    content: "\f292";
+}
+.contact-section > * {
+    transform: translateY(30px);
+    opacity: 0;
+}
+
+.mail {
+    display: flex;
+}
+
+
+.mail a {
+    color: var(--foreColor);
+    display: inline;
+}
+
+.up-btn {
+    width: 90%;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 50px;
+    background: transparent;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 5000;
+    top: 90vh;
+}
+
+.up-btn button {
+    border: none;
+    background: var(--backColor);
+    padding: 10px;
+    font-size: 100%;
+    color: var(--listColor);
+    border-radius: 10px;
+    cursor: pointer;
+    transition : .5s ease-in-out;
+}
+
+.up-btn button:hover {
+    color: var(--foreColor);
+}
+@keyframes scale-lists {
+    0% {
+        opacity : 0;
+        transform: translateY(30px);
+    }
+    95%{
+        opacity : 70%;
+    }
+    100% {
+        opacity : 100%;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width : 500px){
+    .contact-section {
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width : 250px){
+    .home-btn {
+        display: none;
+    }
+}
