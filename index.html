@@ -12,7 +12,40 @@
     <link rel = "stylesheet" type  = "text/css" href = "css/style2.css">
     <link rel = "stylesheet" type  = "text/css" href = "css/style3.css">
 </head>
-<body>
+
+<style>
+
+    .loading {
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 6000;
+        background: #000;
+    }
+
+    .loading img {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 100px;
+        width: 100px;
+        color: yellow;
+    }
+
+    .unload {
+        display: none;
+    }
+</style>
+
+<body class = "overflow-hidden">
+
+    <div class = "loading">
+        <img src = 'images/load10.gif'>
+    </div>
+
     <div id = "front-page">
         <div class = "back-opaque"></div>
         <section class = "front-section">
@@ -75,8 +108,7 @@
                         My vast knowledge in PHP has also driven me into exploring its widely-known framework, Laravel.
                     </p>
                     <p>
-                        Besides, I am a dab hand at popular databases like MySQL, PostgreSQL and MongoDB and their modelling and 
-                        integration with PHP and Laravel.
+                        Besides, I am a dab hand at SQL Databases, especially MySQL.
                     </p>
                     
                 </article>
@@ -87,7 +119,6 @@
                         <li><strong class = "fab fa-css3-alt"></strong></li>
                         <li><strong class = "fab fa-js"></strong></li>
                         <li><strong class = "fab fa-php"></strong></li>
-                        <li><strong class = "fab fa-laravel"></strong></li>
                     </ul>
                 </div>
 
@@ -101,22 +132,22 @@
                 </div>
                 <nav>
                     <ul id = "nav-list">
-                        <li><a href = "https://www.facebook.com/ata.u.rahman.79">
+                        <li><a href = "https://www.facebook.com/ataurahman.shahid">
                         <strong class = "fab fa-facebook-f"></strong></a></li>
 
-                        <li><a href = "https://www.instagram.com/ataurahman15/">
+                        <li><a href = "https://www.instagram.com/ataurahmanshahid/">
                         <strong class = "fab fa-instagram"></strong></a></li>
 
-                        <li><a href = "https://www.linkedin.com/in/ata-ur-rehman-shahid-3855b81a1/">
+                        <li><a href = "https://www.linkedin.com/in/ataurahman-shahid/">
                         <strong class = "fab fa-linkedin-in"></strong></a></li>
 
-                        <li><a href = "https://github.com/ataurehman-ars">
+                        <li><a href = "https://github.com/ataurrahman-shahid">
                         <strong class = "fab fa-github"></strong></a></li>
                     </ul>
                 </nav>
 
                 <div class = "mail">
-                    <p>Or you can directly send me an email at <a href="mailto:urs15ata@gmail.com">urs15ata@gmail.com</a></p>    
+                    <p>Or you can directly send me an email at <a href="mailto:ataurahman.shahid@gmail.com">ataurahman.shahid@gmail.com</a></p>    
                 </div>            
             </footer>
         </main>
@@ -162,12 +193,14 @@
         </style>
     </template>
 
+    
+
+    
     <script type = "module" src= "js/ui.js"></script>
+    <script type = "text/JavaScript" src="js/color_brands.js"></script>
 
 </body>
 
 
 </html>
-
-
 
